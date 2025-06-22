@@ -4,13 +4,11 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-// Sidebar container
 aside {
   width: 30%;
 }
-//Desktop
 .chiara {
-  width: 280px;
+  width: 350px;
   background-color: #f7f9fc;
   min-height: 100vh;
   display: flex;
@@ -20,34 +18,31 @@ aside {
   border-right: 1px solid #e0e0e0;
 
   &__image {
-    padding: 2rem 0 1rem 0;
     img {
-      width: 200px;
-      height: 200px;
+      width: 350px;
+      height: 161px;
       object-fit: cover;
-      border-radius: 20px;
       margin: 0;
       padding: 0;
     }
   }
 
   &__info {
-    padding: 0 2rem;
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
   }
 
   &__name {
-    margin-top: 1rem;
-    font-size: 1.75rem;
+    margin-top: 2rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2e2e48;
-    line-height: 1.2;
+    height: 40px;
+    line-height: 40.4px;
     letter-spacing: -0.02em;
     text-align: left;
-    width: 100%;
   }
 
   &__role {
@@ -56,46 +51,46 @@ aside {
     -webkit-text-fill-color: transparent;
 
     margin-bottom: 1rem;
-    margin-top: 0.25rem;
+    width: 16rem;
+    height: 2rem;
+    margin-top: 0.5rem;
     font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.5;
+    font-size: 1.5rem;
+    line-height: 2rem;
     letter-spacing: 0.03em;
     text-align: left;
-    width: 100%;
   }
 
   &__quote {
     display: flex;
     align-items: center;
     margin: 1rem 0;
-    width: 100%;
+    width: 16rem;
     gap: 0.5rem;
     i {
       color: #79819a;
     }
     .left-quote {
-      height: 3rem;
+      height: 4rem;
       color: #79819a;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      font-size: 0.9rem;
     }
     .right-quote {
       color: #79819a;
-      height: 1.5rem;
+
+      height: 2rem;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
-      font-size: 0.9rem;
     }
 
     .quote {
       flex: 1;
       font-weight: 500;
-      font-size: 1rem;
-      line-height: 1.4rem;
+      font-size: 1.13rem;
+      line-height: 1.5rem;
       letter-spacing: 0.02em;
       color: #47516b;
       margin: 0;
@@ -105,8 +100,9 @@ aside {
 
   .cite {
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     line-height: 1rem;
+    width: 8rem;
     color: #79819a;
     margin-top: 0.5rem;
     text-align: left;
@@ -115,13 +111,13 @@ aside {
 }
 
 hr {
-  width: 100%;
+  width: 16rem;
   background-color: #e2e6ee;
   border: 1px solid #e2e6ee;
 }
 
 .contact {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 
   &__list {
     list-style: none;
@@ -131,7 +127,7 @@ hr {
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
 
   &__icon {
@@ -253,7 +249,7 @@ hr {
 }
 
 .socials {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 
   &__title {
     font-size: 0.75rem;
@@ -265,13 +261,13 @@ hr {
   &__list {
     list-style: none;
     padding: 0;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
 
     &.instagram .socials__icon {
       margin-top: 0rem;
@@ -334,7 +330,7 @@ hr {
 }
 
 .languages {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 
   &__title {
     font-size: 0.75rem;
@@ -346,13 +342,13 @@ hr {
   &__list {
     list-style: none;
     padding: 0;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
   }
 
   &__icon {
@@ -393,17 +389,67 @@ hr {
   }
 }
 
-//main content section
+.main-timeline {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e2e6ee;
+    z-index: 1;
+  }
+}
+
+.timeline-section {
+  position: relative;
+  margin-bottom: 4rem;
+  
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    
+    .timeline-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a478e8, #516cf7);
+      border: 3px solid #ffffff;
+      box-shadow: 0 2px 8px rgba(81, 108, 247, 0.3);
+      position: relative;
+      left: 12px;
+    }
+  }
+  
+  .section-content {
+    margin-left: 60px;
+  }
+}
 
 .maincontent__heading {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-//Latest Projects
+
 .maincontent__projectslist {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
+  
+  .project:first-child {
+    border: 2px solid #e2e6ee;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+    
+    &:hover {
+      border-color: #d1d5db;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .project {
@@ -485,7 +531,6 @@ hr {
   }
 }
 
-//EXPERIENCE
 
 .timeline {
   display: flex;
@@ -509,7 +554,6 @@ hr {
 
   &__title {
     display: flex;
-    // width: 30rem;
     flex-direction: column;
   }
   &__date {
@@ -589,60 +633,6 @@ hr {
   }
 }
 
-// Education Section
-// .education {
-//   &__content {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: flex-start;
-//     // display: grid;
-//     // grid-template-columns: 1fr 1fr 1fr;
-//     gap: 0.5rem;
-//     border-radius: 10px;
-//     width: 100%;
-//   }
-
-//   @media (max-width: 600px) {
-//     &__content {
-//       flex-direction: column;
-//     }
-//   }
-
-//   &__card {
-//     background-color: #f7f9fc;
-//     display: flex;
-//     flex-direction: column;
-   
-//     gap: 0.5rem;
-//     padding: 1rem;
-//     padding-left: 1.5rem;
-//   }
-//   &__top {
-//     display: flex;
-//     flex-direction: row;
-//   }
-//   &__image img {
-//     width: 3rem;
-//   }
-//   &__title {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding-left: 1rem;
-//   }
-//   .sub3 {
-//     color: #2e2e48;
-//   }
-//   .card1 {
-//     border-top-left-radius: 10px;
-//     border-bottom-left-radius: 10px;
-//   }
-//   .card3 {
-//     border-top-right-radius: 10px;
-//     border-bottom-right-radius: 10px;
-//   }
-// }
 
 .education {
   &__content {
@@ -652,7 +642,7 @@ hr {
     align-items: stretch;
     gap: 1rem;
     width: 100%;
-    flex-wrap: wrap; // ensures wrap if needed
+    flex-wrap: wrap; 
   }
 
   &__card {
@@ -661,8 +651,8 @@ hr {
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem 1.5rem;
-    flex: 1; // equal width on desktop
-    min-width: 0; // fix shrinking issues
+    flex: 1; 
+    min-width: 0; 
   
   }
 
@@ -673,8 +663,8 @@ hr {
     }
 
     &__card {
-      width: 100%; // ✅ take full width in mobile
-      border-radius: 10px !important; // override if needed
+      width: 100%; 
+      border-radius: 10px !important; 
     }
   }
 
@@ -712,7 +702,6 @@ hr {
 }
 
 
-// Skills Section
 
 .skills {
   display: flex;
@@ -729,7 +718,6 @@ hr {
     flex-direction: column;
     gap: 100px;
   }
-  //Skills Section 1
 
   &__section1 {
     display: flex;
@@ -759,7 +747,6 @@ hr {
     flex-direction: row;
     font-size: 0.9rem;
     line-height: 1.2rem;
-    // color: #9251f7;
     gap: 0.5rem;
     @media (max-width: 600px) {
       flex-direction: column;
@@ -807,7 +794,7 @@ hr {
     .dot-item {
       position: relative;
       padding-left: 1.5em;
-      color: #9251f7; // Space for the dot
+      color: #9251f7; 
     }
 
     .dot-item::before {
@@ -824,7 +811,6 @@ hr {
       position: relative;
       padding-left: 1.5em;
       color: #516cf7;
-      // Space for the dot
     }
 
     .dot-item2::before {
@@ -849,7 +835,6 @@ hr {
     border-bottom-right-radius: 10px;
   }
 
-  //Skills Section 2
 
   &__card3-1 {
     padding-left: 1rem;
@@ -907,7 +892,6 @@ hr {
   }
   &__card1-1 .hr2 {
     border: 1px solid #e2e6ee;
-    // height: 0.1rem;
     width: 3rem;
     align-content: center;
     @media (max-width: 600px) {
@@ -931,7 +915,6 @@ hr {
   }
 }
 
-// Tools Section
 .tools__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -957,7 +940,6 @@ hr {
     }
   }
 }
-//Tools
 .tools {
   &__wrapper {
     display: grid;
@@ -966,18 +948,11 @@ hr {
 
     @media (min-width: 600px) {
       grid-template-columns: repeat(20, 1fr);
-      .a,
-      .b,
-      .c,
-      .d {
+      .a, .b, .c, .d {
         grid-column: span 5;
-      } // spans 1/5th of width
-      .e,
-      .f,
-      .g,
-      .h,
-      .i {
-        grid-column: span 4; // 5 equal items in second row
+      }
+      .e, .f, .g, .h, .i {
+        grid-column: span 4;
       }
     }
   }
@@ -1031,16 +1006,16 @@ hr {
 @media screen and (max-width: 600px) {
   .container {
     width: 100%;
-    flex-direction: column; // stack items vertically
+    flex-direction: column; 
   }
 
   .chiara {
     width: 100%;
-
     order: -1; 
   }
+  
   .main-content {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
     flex: 1;
 
     .experience,
@@ -1048,6 +1023,28 @@ hr {
     .skills,
     .tools {
       width: 100%;
+    }
+  }
+
+  .main-timeline {
+    &::before {
+      left: 15px;
+    }
+  }
+
+  .timeline-section {
+    margin-bottom: 3rem;
+    
+    .timeline-marker {
+      .timeline-dot {
+        left: 7px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+    
+    .section-content {
+      margin-left: 45px;
     }
   }
 }

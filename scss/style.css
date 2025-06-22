@@ -42,8 +42,7 @@ aside {
 .chiara__image img {
   width: 350px;
   height: 161px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0;
   padding: 0;
 }
@@ -183,8 +182,7 @@ hr {
   aside .chiara__image img {
     width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     display: block;
   }
   .chiara__info {
@@ -340,8 +338,7 @@ hr {
 .languages__icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .languages__info {
@@ -361,6 +358,44 @@ hr {
   color: #79819a;
 }
 
+.main-timeline {
+  position: relative;
+}
+.main-timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e2e6ee;
+  z-index: 1;
+}
+
+.timeline-section {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.timeline-section .timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.timeline-section .timeline-marker .timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a478e8, #516cf7);
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(81, 108, 247, 0.3);
+  position: relative;
+  left: 12px;
+}
+.timeline-section .section-content {
+  margin-left: 60px;
+}
+
 .maincontent__heading {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -369,7 +404,15 @@ hr {
 .maincontent__projectslist {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
+}
+.maincontent__projectslist .project:first-child {
+  border: 2px solid #e2e6ee;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+}
+.maincontent__projectslist .project:first-child:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project {
@@ -820,17 +863,10 @@ hr {
   .tools__wrapper {
     grid-template-columns: repeat(20, 1fr);
   }
-  .tools__wrapper .a,
-  .tools__wrapper .b,
-  .tools__wrapper .c,
-  .tools__wrapper .d {
+  .tools__wrapper .a, .tools__wrapper .b, .tools__wrapper .c, .tools__wrapper .d {
     grid-column: span 5;
   }
-  .tools__wrapper .e,
-  .tools__wrapper .f,
-  .tools__wrapper .g,
-  .tools__wrapper .h,
-  .tools__wrapper .i {
+  .tools__wrapper .e, .tools__wrapper .f, .tools__wrapper .g, .tools__wrapper .h, .tools__wrapper .i {
     grid-column: span 4;
   }
 }
@@ -860,8 +896,7 @@ hr {
 .tools .tool img {
   width: 40px;
   height: 40px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-bottom: 0.5rem;
   border-radius: 0.3rem;
 }
@@ -884,7 +919,7 @@ hr {
     order: -1;
   }
   .main-content {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
     flex: 1;
   }
   .main-content .experience,
@@ -893,4 +928,20 @@ hr {
   .main-content .tools {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+  .main-timeline::before {
+    left: 15px;
+  }
+  .timeline-section {
+    margin-bottom: 3rem;
+  }
+  .timeline-section .timeline-marker .timeline-dot {
+    left: 7px;
+    width: 14px;
+    height: 14px;
+  }
+  .timeline-section .section-content {
+    margin-left: 45px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
