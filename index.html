@@ -14,15 +14,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="page-transition">
     <div class="container">
-      <aside class="chiara">
-        <div class="chiara__image">
+      <aside class="chiara animate-fade-in-left">
+        <div class="chiara__image animate-scale-in animate-delay-1">
           <img src="assets/chiara.jpg" alt="Chiara Bianchi's Image" />
         </div>
         <div class="chiara__info">
-          <h1 class="chiara__name">Chiara Bianchi</h1>
-          <p class="chiara__role">Product Designer</p>
+          <h1 class="chiara__name animate-slide-in-top animate-delay-2">Chiara Bianchi</h1>
+          <p class="chiara__role animate-slide-in-top animate-delay-3">Product Designer</p>
 
           <div class="chiara__quote">
             <div class="left-quote"><i class="fas fa-quote-left"></i></div>
@@ -183,17 +183,17 @@
         </div>
       </aside>
 
-      <main class="main-content">
+      <main class="main-content animate-fade-in-right">
         <div class="main-timeline">
           <section class="maincontent__section timeline-section">
             <div class="timeline-marker">
-              <div class="timeline-dot"></div>
+              <div class="timeline-dot timeline-dot-enhanced"></div>
             </div>
             <div class="section-content">
-              <h2 class="maincontent__heading">Latest projects</h2>
+              <h2 class="maincontent__heading animate-fade-in-up animate-delay-1">Latest projects</h2>
 
-          <div class="maincontent__projectslist">
-            <div class="project">
+          <div class="maincontent__projectslist cards-container">
+            <div class="project card-item hover-lift">
               <div class="project__info">
                 <div class="project__thumbnail">
                   <img src="assets/figma.png" alt="figma logo" />
@@ -221,7 +221,7 @@
               </div>
             </div>
 
-            <div class="project">
+            <div class="project card-item hover-lift">
               <div class="project__info">
                 <div class="project__thumbnail">
                   <img src="assets/project2.png" alt="Modern Website" />
