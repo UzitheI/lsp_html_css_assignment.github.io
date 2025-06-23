@@ -218,6 +218,15 @@ hr {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+  }
+  .chiara__quote .quote {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .chiara__quote .cite {
+    text-align: center;
   }
   .contact {
     margin-top: 2rem;
