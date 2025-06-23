@@ -1071,6 +1071,60 @@ hr {
   }
 }
 
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.card__header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.card__content {
+  color: #666;
+  line-height: 1.5;
+}
+.card--featured {
+  border: 2px solid #516cf7;
+  box-shadow: 0 4px 12px rgba(81, 108, 247, 0.15);
+}
+.card--compact {
+  padding: 0.5rem;
+}
+.card--compact__title {
+  font-size: 1rem;
+}
+
+.button--primary {
+  background: linear-gradient(135deg, #a478e8, #516cf7);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.button--primary:hover {
+  transform: translateY(-1px);
+}
+
+.button--secondary {
+  background: #f7f9fc;
+  color: #516cf7;
+  border: 1px solid #e2e6ee;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     width: 100%;
