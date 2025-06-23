@@ -392,6 +392,12 @@ hr {
     margin-right: 1rem;
     color: white;
     font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
   }
   &__icon i {
     color: white;
@@ -536,14 +542,14 @@ hr {
   padding: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
 
   &:hover {
-    transform: translateY(-4px);
-    border: 2px solid #d1d5db;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    border: 2px solid #516cf7;
+    box-shadow: 0 20px 40px rgba(81, 108, 247, 0.15);
   }
 
   &__info {
@@ -893,11 +899,11 @@ hr {
     min-width: 120px;
     flex: 1;
     white-space: nowrap;
-    transition: all 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px) rotate(2deg);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     }
 
     &--design {
@@ -1197,6 +1203,16 @@ hr {
     background-color: #f7f9fc;
     padding: 1rem;
     text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      
+      img {
+        transform: scale(1.2) rotate(10deg);
+      }
+    }
 
     img {
       width: 40px;
@@ -1204,6 +1220,7 @@ hr {
       object-fit: contain;
       margin-bottom: 0.5rem;
       border-radius: 0.3rem;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__name {
