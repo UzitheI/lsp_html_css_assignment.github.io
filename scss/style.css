@@ -221,6 +221,7 @@ hr {
   }
   .contact {
     margin-top: 2rem;
+    margin: -6px;
   }
   .contact__list {
     display: grid;
@@ -245,6 +246,7 @@ hr {
   }
   .socials {
     margin-top: 2rem;
+    margin: -6px;
   }
   .socials__list {
     display: grid;
@@ -269,6 +271,8 @@ hr {
   }
   .languages {
     margin-top: 2rem;
+    margin: -6px;
+    padding-bottom: 5px;
   }
   .languages__list {
     display: grid;
