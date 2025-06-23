@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-family-base;
   box-sizing: border-box;
 }
 aside {
@@ -9,14 +9,14 @@ aside {
 }
 
 .chiara {
-  width: 350px;
-  background-color: #f7f9fc;
+  width: $sidebar-width;
+  background-color: $bg-light;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid $border-light;
 
   &__image {
     img {
