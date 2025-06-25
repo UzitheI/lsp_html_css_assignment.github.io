@@ -489,10 +489,10 @@ hr {
     position: absolute;
     left: 20px;
     top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #e2e6ee;
+    width: 1px;
+    background-color: #E2E6EE;
     z-index: 1;
+    height: calc(100% - 18rem);
   }
 }
 
@@ -510,9 +510,9 @@ hr {
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #a478e8, #516cf7);
+      background: #5531A7;
       border: 3px solid #ffffff;
-      box-shadow: 0 2px 8px rgba(81, 108, 247, 0.3);
+      box-shadow: 0 2px 8px rgba(85, 49, 167, 0.3);
       position: relative;
       left: 12px;
     }
@@ -1342,6 +1342,9 @@ hr {
   .main-timeline {
     &::before {
       left: 15px;
+      width: 1px;
+      background-color: #E2E6EE;
+      height: calc(100% - 20rem);
     }
   }
 
